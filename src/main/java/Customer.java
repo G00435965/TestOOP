@@ -62,24 +62,32 @@ public class Customer {
 
         Customer thirdCustomer = new Customer(customerId, cutomerName, customerEmail, customerNumber);
 
-    }
-    //Creating an ArrayList
-    ArrayList<String> customerArrayList = new ArrayList<>(Arrays.asList("ID","Name","Email", "Phone Number"));
-    ArrayList<String> customerArrayList2 = new ArrayList<>(Arrays.asList("1234","John","John@atu.ie", "089 111 1111"));
-    //
-    ArrayList<String> customerArrayList3 = new ArrayList<>(Arrays.asList("5678","Chris","Chris@atu.ie", "088 111 1111"));
-    //
-    ArrayList<String> customerArrayList4 = new ArrayList<>(Arrays.asList("9101","Eric","Eric@atu.ie", "087 111 1111"));
-    //
-    ArrayList<String> customerArrayList5 = new ArrayList<>(Arrays.asList("1213","Luke","Luke@atu.ie"));
-    //
-    //Get element
-    System.out.println(friendsArrayList.get(3))
+
+        //Creating an ArrayList
+        Scanner scanner = new Scanner(system.in);
+        try {
+            ArrayList<String> customerArrayList = new ArrayList<>(Arrays.asList("ID", "Name", "Email", "Phone Number"));
+            ArrayList<String> customerArrayList2 = new ArrayList<>(Arrays.asList("1234", "John", "John@atu.ie", "089 111 1111"));
+            //
+            ArrayList<String> customerArrayList3 = new ArrayList<>(Arrays.asList("5678", "Chris", "Chris@atu.ie", "088 111 1111"));
+            //
+            ArrayList<String> customerArrayList4 = new ArrayList<>(Arrays.asList("9101", "Eric", "Eric@atu.ie", "087 111 1111"));
+            //
+            ArrayList<String> customerArrayList5 = new ArrayList<>(Arrays.asList("1213", "Luke", "Luke@atu.ie"));
+            //
+            //Get element
+            System.out.println(friendsArrayList.get(3))
             //add
             customersArrayList5.add("186 111 1111");
 
-    //updating details
-    customersArrayList2.set(1,"Jack");
-}
-
+            //updating details
+            customersArrayList2.set(1, "Jack");
+        } catch (InputMismatchExeption ae) {
+            System.out.println("Please enter a valid customer id");
+        }
+        Finally {
+            scanner.close;
+        }
+        }
+    }
 
