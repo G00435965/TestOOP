@@ -21,6 +21,7 @@ public class CustomerOther {
 
     }
 
+
     public String getIdCustomer() {
         return idCustomer;
     }
