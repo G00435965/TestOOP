@@ -65,7 +65,7 @@ public class Customer {
 
         //Creating an ArrayList
         Scanner scanner = new Scanner(system.in);
-        try {
+        try{
             ArrayList<String> customerArrayList = new ArrayList<>(Arrays.asList("ID", "Name", "Email", "Phone Number"));
             ArrayList<String> customerArrayList2 = new ArrayList<>(Arrays.asList("1234", "John", "John@atu.ie", "089 111 1111"));
             //
@@ -82,12 +82,13 @@ public class Customer {
 
             //updating details
             customersArrayList2.set(1, "Jack");
-        } catch (InputMismatchExeption ae) {
-            System.out.println("Please enter a valid customer id");
-        }
-        Finally {
-            scanner.close;
-        }
-        }
+    } catch (InputMismatchExeption ae) {
+        System.out.println("Please enter a valid customer id");
     }
+    Finally {
+        scanner.close;
+    }
+}
+    }
+
 
