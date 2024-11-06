@@ -13,6 +13,14 @@ public class CustomerOther {
         numberCustomer = "";
     }
 
+    public CustomerOther(String idCustomer) {
+        this.idCustomer = idCustomer;
+        nameCustomer = "";
+        emailCustomer = "";
+        numberCustomer = "";
+
+    }
+
     public String getIdCustomer() {
         return idCustomer;
     }
