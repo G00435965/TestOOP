@@ -24,6 +24,24 @@ public class Customer {
         firstCustomer.setEmailCustomer(customerEmail);
         firstCustomer.setNumberCustomer(customerNumber);
 
+        //Gather details of first customer
+        System.out.println("Please enter the  second customers unique ID");
+        studentId = customerInput.nextLine();
+
+        System.out.println("Please enter the second customers name");
+        studentName = customerInput.nextLine();
+
+        System.out.println("Please enter the second customers email address");
+        studentEmail = customerInput.nextLine();
+
+        System.out.println("Please enter the second customers phone number");
+        studentNumber = customerInput.nextLine();
+
+        Customer secondCustomer = new Customer(CustomerId);
+        secondCustomer.setNameCustomer(customerName);
+        secondCustomer.setEmailCustomer(customerEmail);
+        secondCustomer.setNumberCustomer(customerNumber);
+
     }
 }
 
